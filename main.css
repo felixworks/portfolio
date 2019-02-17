@@ -1,6 +1,6 @@
 * {
     box-sizing: border-box;
-    outline: 1px dotted red;
+    /* outline: 1px dotted red; */
 }
   
 body {
@@ -12,37 +12,90 @@ body {
     line-height: 1.5;
 }
 
+
+.text-container {
+    display: block;
+    margin: 0 auto;
+    width: 80%;
+}
+
+.text-container p {
+    text-align: left;
+}
+
+/* nav styles */
 nav {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
-    padding: 35px;
+    background-color: #95A844;
+    max-height: 100px;
+    padding: 20px;
 }
 
+.brand {
+    display: flex;
+    max-width: 20%;
+    max-height: auto;
+}
+
+.image-leaf {
+    max-height: 100px;
+    max-width: auto;
+    padding: 10px;
+}
+
+.contact {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    flex-wrap: wrap;
+    align-items: center;
+    padding: 10px;
+}
+
+.contact li {
+    padding: 10px;
+}
+
+/* main styles */
 main {
     padding: 35px;
 }
 
-.app-section-container {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    align-items: flex-start;
+.main-container {
+    background-color: #CAD593;
 }
 
 .selected-app-container {
-    width: 70%;
-    height: 100%;
-    padding: 10px;
+    
 }
 
-.app-tiles {
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    align-items: center;
-    padding: 10px;
-    width: 30%;
-    height: 100%;
+.app-image {
+    max-width: 100%;
+}
+
+.tile-image {
+    max-width: 100%;
+}
+
+/* responsive styles */
+@media screen and (min-width: 480px) {
+    .main-container {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: flex-start;
+        padding: 10px;
+    }
+
+    .selected-app-container {
+        width: 70%;
+    }
+
+    .app-tiles {
+        width: 30%;
+    }
+
 }
