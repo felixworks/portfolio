@@ -1,15 +1,38 @@
+/* charcoal: #404040 tan: #C6BF9A*/
+
 * {
     box-sizing: border-box;
-    /* outline: 1px dotted red; */
+    /* outline: 1px dotted red;*/
 }
   
 body {
-    font-family: "Open Sans",
-    sans-serif; 
-    font-size: 20px;
+    font-family: 'Nunito Sans', sans-serif;
+    font-size: 16px;
     color: #444;
     text-align: center;
     line-height: 1.5;
+    background-color: rgb(240, 240, 240);
+    color: #C6BF9A;
+}
+/* general font family and sizing */
+h1, h2, h3, h4, a {
+    font-family: 'Halant', serif;
+}
+
+h1 {
+    font-size: 36px;
+}
+
+h2 {
+    font-size: 30px;
+}
+
+h3 {
+    font-size: 24px;
+}
+
+h4 {
+    font-size: 20px;
 }
 
 
@@ -23,65 +46,150 @@ body {
     text-align: left;
 }
 
+h2.standalone {
+    color: #404040;
+}
+
+img {
+    max-width: 100%;
+}
+
 /* nav styles */
-nav {
+nav a {
+    font-size: 28px;
+}
+
+.flex-nav-container {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
-    background-color: #95A844;
-    max-height: 100px;
+    background-color: #404040;
+    max-height: 140px;
     padding: 20px;
+}
+
+
+.brand-container {
+    display: flex;
 }
 
 .brand {
     display: flex;
-    max-width: 20%;
-    max-height: auto;
+    flex-direction: column;
 }
 
 .image-leaf {
+    display: none;
     max-height: 100px;
     max-width: auto;
     padding: 10px;
+    margin: auto;
 }
 
-.contact {
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    flex-wrap: wrap;
-    align-items: center;
-    padding: 10px;
+.fa-bars {
+    color: white;
+    opacity: 0.75;
 }
 
-.contact li {
-    padding: 10px;
+button {
+    background: none;
+	color: inherit;
+	border: none;
+	padding: 0;
+	font: inherit;
+	cursor: pointer;
+	outline: inherit;
+}
+
+.contact-links {
+    text-decoration: none;
+}
+.contact-links:link, .contact-links:visited{
+    color: #C6BF9A;
+}
+
+.desktop.contact {
+    display: none;
+}
+
+.mobile.contact {
+    display: none;
+    outline: solid 2px #404040;
+    margin: 10px;
+}
+.mobile.contact li {
+    outline: solid 2px #404040;
+}
+
+.mobile.contact a {
+    color: #404040;
 }
 
 /* main styles */
 main {
-    padding: 35px;
+    margin: 10px;
 }
 
-.main-container {
-    background-color: #CAD593;
+.main-container, section.aboutMe {
+    background-color: #404040;
+    margin: 20px;
+    padding: 10px;
 }
 
-.selected-app-container {
-    
+.main-container > * {
+    padding: 10px;
 }
 
-.app-image {
-    max-width: 100%;
+.tile-image-container {
+    max-height: 200px;
+    /* background-color: #404040; */
 }
 
-.tile-image {
-    max-width: 100%;
+.selected-app-container > * {
+    padding: 10px 10px;
 }
+
+.selected-app-container a:link, .selected-app-container a:visited {
+    color: #C6BF9A;
+    padding: 10px;
+    font-size: 20px;
+}
+
+/* section.aboutMe {
+    background-color: #CD4545;
+    margin: 20px;
+} */
 
 /* responsive styles */
-@media screen and (min-width: 480px) {
+@media screen and (min-width: 650px) {
+    /* nav */
+    .contact {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        flex-wrap: wrap;
+        align-items: center;
+        padding: 10px;
+    }
+    
+    .contact li {
+        padding: 10px;
+    }
+    
+    .image-leaf {
+        display: block;
+    }
+
+    .desktop.contact {
+        display: flex;
+    }
+    
+    .menu-button {
+        display: none;
+    }
+
+    /* main */
     .main-container {
         display: flex;
         flex-direction: row;
