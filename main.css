@@ -1,18 +1,17 @@
-/* charcoal: #404040 tan: #C6BF9A*/
+/* charcoal: #EFE7E6 tan: #51344D grullo: #EFE7E6*/
 
 * {
     box-sizing: border-box;
     /* outline: 1px dotted red;*/
 }
-  
+
 body {
     font-family: 'Nunito Sans', sans-serif;
     font-size: 16px;
-    color: #444;
     text-align: center;
     line-height: 1.5;
-    background-color: rgb(240, 240, 240);
-    color: #C6BF9A;
+    background-color: #FFF9DD;
+    color: #51344D;
 }
 /* general font family and sizing */
 h1, h2, h3, h4, a {
@@ -47,7 +46,7 @@ h4 {
 }
 
 h2.standalone {
-    color: #404040;
+    color: #51344D;
 }
 
 img {
@@ -64,7 +63,7 @@ nav a {
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
-    background-color: #404040;
+    background-color: #EFE7E6;
     max-height: 140px;
     padding: 20px;
 }
@@ -106,7 +105,7 @@ button {
     text-decoration: none;
 }
 .contact-links:link, .contact-links:visited{
-    color: #C6BF9A;
+    color: #51344D;
 }
 
 .desktop.contact {
@@ -115,15 +114,15 @@ button {
 
 .mobile.contact {
     display: none;
-    outline: solid 2px #404040;
+    outline: solid 2px #EFE7E6;
     margin: 10px;
 }
 .mobile.contact li {
-    outline: solid 2px #404040;
+    outline: solid 2px #EFE7E6;
 }
 
 .mobile.contact a {
-    color: #404040;
+    color: #EFE7E6;
 }
 
 /* main styles */
@@ -132,7 +131,7 @@ main {
 }
 
 .main-container, section.aboutMe {
-    background-color: #404040;
+    background-color: #EFE7E6;
     margin: 20px;
     padding: 10px;
 }
@@ -143,7 +142,7 @@ main {
 
 .tile-image-container {
     max-height: 200px;
-    /* background-color: #404040; */
+    /* background-color: #EFE7E6; */
 }
 
 .selected-app-container > * {
@@ -151,7 +150,7 @@ main {
 }
 
 .selected-app-container a:link, .selected-app-container a:visited {
-    color: #C6BF9A;
+    color: #51344D;
     padding: 10px;
     font-size: 20px;
 }

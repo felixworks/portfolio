@@ -71,7 +71,7 @@ function handleAppClick() {
         /* assumes that the alt attribute in each 
         tile <img> has the correct ordered number at the end of the 
         string*/
-        selectedAppNumber = $(this).attr('alt').slice(-1);
+        selectedAppNumber = $(this).attr('data-index');
         // console.log(selectedAppNumber);
         renderSelectedApp();
     });
