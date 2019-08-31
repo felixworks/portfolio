@@ -2,7 +2,7 @@ const appContent = [
   {
     number: 1,
     title: "Classic Authors Quiz",
-    imagePath: "ClassicAuthorsQuiz-resized.png",
+    imagePath: "images/ClassicAuthorsQuiz-resized.png",
     description: `A quiz designed to separate the cultured from the raw. Given a book title, choose which author wrote it.<br><br>
         This is a fun, simple quiz with a snobbish grading metric. I created this with Anya Snow as an exercise to learn basic web app structure with jQuery.`,
     techStack: "HTML, CSS, and JavaScript",
@@ -12,7 +12,7 @@ const appContent = [
   {
     number: 2,
     title: "Would I Like This Game?",
-    imagePath: "WouldILikeThisGame-resized.png",
+    imagePath: "images/WouldILikeThisGame-resized.png",
     description: `A simple and straightforward tool for users to investigate a particular game. No gimmicks or editorializing allowed. Searching for a game gives the user a rundown of the basic game information (platforms, description, genres, etc.) pulled from the GiantBomb API. Additionally, the most popular Twitch clip and the three most popular active Twitch streams are shown to provide examples of fun and genuine gameplay.`,
     techStack: "HTML, CSS, JavaScript, jQuery, GiantBomb API, Twitch API",
     liveLink: "https://felixworks.github.io/would-i-like-this-game/",
@@ -21,7 +21,7 @@ const appContent = [
   {
     number: 3,
     title: "Squared Squirrel",
-    imagePath: "SquaredSquirrel.png",
+    imagePath: "images/SquaredSquirrel.png",
     description: `A grid-based browser game that rewards planning and spatial awareness. The goal is to navigate the squirrel back to its home tree while avoiding towers and eagles. The eagles only move when you do.`,
     techStack: "React, Express, Node, PostgreSQL",
     liveLink: "https://squared-squirrel-app.felixworks.now.sh/",
@@ -30,7 +30,7 @@ const appContent = [
   {
     number: 4,
     title: "HomeSlice",
-    imagePath: "HomeSlice.png",
+    imagePath: "images/HomeSlice.png",
     description: `A one-stop pizza shop builder for mom-and-pop restaurants – built by pizza enthusiasts for pizza enthusiasts! `,
     techStack: "React, Express, Node, PostgreSQL",
     liveLink: "https://homesliceapp.now.sh/",
@@ -56,8 +56,8 @@ function generateSelectedApp(
     <div class="text-container"><p>${description}</p></div>
     <h4>Tech used: ${techStack}</h4>
     <div>
-        <a href="${liveLink}">Live website</a>
-        <a href="${gitHub}">Github Repo</a>
+        <a href="${liveLink}" target="_blank">Live website</a>
+        <a href="${gitHub}" target="_blank">Github Repo</a>
     </div>`;
   return htmlApp;
 }
@@ -84,7 +84,11 @@ function handleMenuClick() {
   $(".flex-nav-container").on("click", ".menu-button", function(event) {
     // shows/hides contact info when hamburger menu is clicked
     $(".mobile.contact").toggle();
-    // console.log("Button was clicked");
+  });
+}
+function handleMenuLinkClick() {
+  $(".flex-nav-container").on("click", ".contact-links", function(event) {
+    $(".mobile.contact").toggle();
   });
 }
 
@@ -94,7 +98,6 @@ function handleAppClick() {
         tile <img> has the correct ordered number at the end of the 
         string*/
     selectedAppNumber = $(this).attr("data-index");
-    // console.log(selectedAppNumber);
     renderSelectedApp();
   });
 }

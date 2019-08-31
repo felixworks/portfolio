@@ -127,18 +127,17 @@ button {
 }
 
 .mobile.contact a {
-  color: #efe7e6;
+  color: #51344d;
 }
 
 /* main styles */
 main {
-  margin: 10px;
+  margin-top: 10px;
 }
 
 .main-container,
 section.aboutMe {
-  background-color: #f9ffe8;
-  margin: 20px;
+  background-color: #c3d68d;
   padding: 10px;
 }
 
@@ -210,12 +209,22 @@ section.aboutMe {
   }
 
   /* main */
+  main {
+    margin: 10px;
+  }
+
   .main-container {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
     align-items: flex-start;
     padding: 10px;
+    margin: 20px;
+  }
+
+  .main-container,
+  section.aboutMe {
+    background-color: #f9ffe8;
   }
 
   .selected-app-container {
