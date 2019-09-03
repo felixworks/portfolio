@@ -1,8 +1,5 @@
-/* charcoal: #EFE7E6 tan: #51344D grullo: #EFE7E6*/
-
 * {
   box-sizing: border-box;
-  /* outline: 1px dotted red;*/
 }
 
 body {
@@ -10,7 +7,6 @@ body {
   font-size: 16px;
   text-align: center;
   line-height: 1.5;
-  /* background-color: #fff9dd; */
   color: #51344d;
 }
 /* general font family and sizing */
@@ -67,7 +63,6 @@ nav a {
   justify-content: space-between;
   align-items: center;
   background-color: #6f803e;
-  /* background-color: #ebffad; */
   max-height: 140px;
   padding: 20px;
   color: #ebffad;
@@ -155,8 +150,6 @@ section.aboutMe {
   background-color: #6f803e;
 }
 .tile-image-container {
-  /* max-height: 200px; */
-  /* background-color: #EFE7E6; */
   color: #ebffad;
 }
 
@@ -174,11 +167,6 @@ section.aboutMe {
   padding: 10px;
   font-size: 20px;
 }
-
-/* section.aboutMe {
-    background-color: #CD4545;
-    margin: 20px;
-} */
 
 /* responsive styles */
 @media screen and (min-width: 650px) {

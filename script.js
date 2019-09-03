@@ -31,7 +31,7 @@ const appContent = [
     number: 4,
     title: "HomeSlice",
     imagePath: "images/HomeSlice.png",
-    description: `A one-stop pizza shop builder for mom-and-pop restaurants – built by pizza enthusiasts for pizza enthusiasts! `,
+    description: `A one-stop pizza shop builder for mom-and-pop restaurants - built by pizza enthusiasts for pizza enthusiasts! `,
     techStack: "React, Express, Node, PostgreSQL",
     liveLink: "https://homesliceapp.now.sh/",
     gitHub: "https://github.com/charlotteshih/homeslice-frontend"
