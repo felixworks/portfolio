@@ -6,11 +6,12 @@
       content="width=device-width, initial-scale=1"
       lang="en"
     />
-    <title>Portfolio</title>
+    <title>Portfolio - Felixworks</title>
     <link
       href="https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.css"
       rel="stylesheet"
     />
+    <link rel="shortcut icon" type="image/x-icon" href="favicon.ico" />
     <script
       defer
       src="https://use.fontawesome.com/releases/v5.7.2/js/all.js"
@@ -103,39 +104,11 @@
       </nav>
     </header>
     <main>
-      <h2 class="standalone">Projects</h2>
       <div class="main-container">
-        <section class="selected-app-container" id="selected-app-container">
-          <div class="selected-app-view">
-            <img
-              src="images/ClassicAuthorsQuiz-resized.png"
-              alt="app-image"
-              class="app-image"
-            />
-          </div>
-          <h3>Classic Authors Quiz</h3>
-          <div class="text-container">
-            <p>
-              A quiz designed to separate the cultured from the raw. Given a
-              book title, choose which author wrote it.<br /><br />
-              This is a fun, simple quiz with a snobbish grading metric. I
-              created this with Anya Snow as an exercise to learn basic web app
-              structure with jQuery.
-            </p>
-          </div>
-          <h4>Tech used: HTML, CSS, and JS</h4>
-          <div>
-            <a href="https://nw-iguana.github.io/bookquiz/" target="_blank"
-              >Live website</a
-            >
-            <a href="https://github.com/nw-iguana/bookquiz" target="_blank"
-              >Github Repo</a
-            >
-          </div>
-        </section>
-        <section class="app-tiles">
-          <h3>Click on an app to display it in the main view!</h3>
-          <ul>
+        <h2 class="standalone">Projects</h2>
+        <section class="app-tiles-container">
+          <h3>Click on an app to display it!</h3>
+          <ul class="app-tiles-grid">
             <li>
               <div class="tile-image-container">
                 <a href="#selected-app-container"
@@ -186,9 +159,38 @@
             </li>
           </ul>
         </section>
+        <section class="selected-app-container" id="selected-app-container">
+          <div class="selected-app-view">
+            <img
+              src="images/ClassicAuthorsQuiz-resized.png"
+              alt="app-image"
+              class="app-image"
+            />
+          </div>
+          <h3>Classic Authors Quiz</h3>
+          <div class="text-container">
+            <p>
+              A quiz designed to separate the cultured from the raw. Given a
+              book title, choose which author wrote it.<br /><br />
+              This is a fun, simple quiz with a snobbish grading metric. I
+              created this with Anya Snow as an exercise to learn basic web app
+              structure with jQuery.
+            </p>
+          </div>
+          <h4>Tech used: HTML, CSS, and JS</h4>
+          <div>
+            <a href="https://nw-iguana.github.io/bookquiz/" target="_blank"
+              >Live website</a
+            >
+            <a href="https://github.com/nw-iguana/bookquiz" target="_blank"
+              >Github Repo</a
+            >
+          </div>
+        </section>
       </div>
-      <h2 class="standalone">About Me</h2>
+
       <section class="aboutMe" id="aboutMe">
+        <h2 class="standalone">About Me</h2>
         <img src="images/felix.jpg" alt="felix-image" />
         <div class="text-container">
           <p>
