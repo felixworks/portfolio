@@ -46,6 +46,7 @@ h4 {
 
 h2.standalone {
   color: #51344d;
+  font-weight: bold;
 }
 
 img {
@@ -62,7 +63,7 @@ nav a {
   flex-direction: row;
   justify-content: space-between;
   align-items: center;
-  background-color: #6f803e;
+  background-color: #9b4447;
   max-height: 140px;
   padding: 20px;
   color: #ebffad;
@@ -130,9 +131,18 @@ main {
   margin-top: 10px;
 }
 
+.main-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px;
+  margin: 0 0 20px 0;
+}
+
 .main-container,
 section.aboutMe {
-  background-color: #c3d68d;
+  background-color: #e8dfc7;
   padding: 10px;
 }
 
@@ -140,15 +150,25 @@ section.aboutMe {
   padding: 10px;
 }
 
-.app-tiles ul p {
+.app-tiles-container {
+  order: 1;
+}
+
+.app-tiles-container ul p {
   color: #ebffad;
 }
 
-.app-tiles ul li {
+.app-tiles-container ul li {
   border: 3px solid black;
   margin: 5px;
-  background-color: #6f803e;
+  background-color: #9b4447;
 }
+
+.app-tiles-grid {
+  display: flex;
+  flex-direction: column-reverse;
+}
+
 .tile-image-container {
   color: #ebffad;
 }
@@ -203,23 +223,69 @@ section.aboutMe {
 
   .main-container {
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
     justify-content: space-between;
-    align-items: flex-start;
+    align-items: center;
     padding: 10px;
-    margin: 20px;
+    margin: 0 0 20px 0;
   }
 
-  .main-container,
+  .app-tiles-container ul li {
+    border: 3px solid black;
+    border-radius: 100px;
+    margin: 5px;
+    background-color: #9b4447;
+    padding: 5px;
+  }
+
+  h2.standalone {
+    order: -2;
+  }
+
+  /* .main-container,
   section.aboutMe {
     background-color: #f9ffe8;
-  }
+  } */
 
-  .selected-app-container {
+  /* .selected-app-container {
     width: 70%;
   }
 
-  .app-tiles {
+  .app-tiles-container {
     width: 30%;
+  } */
+
+  .app-tiles-container {
+    order: -1;
+    margin: 0 auto;
+  }
+
+  .selected-app-container {
+    margin: 0 auto;
+  }
+
+  .app-tiles-grid {
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: space-between;
+  }
+
+  .app-tiles-grid li {
+    width: 125px;
+    height: 125px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+
+  .app-tiles-grid li p {
+    display: none;
+  }
+}
+
+@media screen and (min-width: 1000px) {
+  .app-tiles-grid li {
+    width: 150px;
+    height: 150px;
   }
 }

@@ -93,7 +93,7 @@ function handleMenuLinkClick() {
 }
 
 function handleAppClick() {
-  $(".app-tiles").on("click", ".tile-image", function(event) {
+  $(".app-tiles-container").on("click", ".tile-image", function(event) {
     /* assumes that the alt attribute in each 
         tile <img> has the correct ordered number at the end of the 
         string*/
